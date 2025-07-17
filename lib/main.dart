@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'pages/transactions_page.dart';
 import 'pages/list_transactions_page.dart';
+import 'theme.dart';
 
 void main() {
   runApp(const FinanceApp());
@@ -26,7 +27,7 @@ class _FinanceAppState extends State<FinanceApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Lançamentos Financeiros',
-      theme: ThemeData(primarySwatch: Colors.blue),
+      theme: appTheme,
       initialRoute: '/list',
       routes: {
         '/list': (context) => ListPage(
